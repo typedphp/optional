@@ -90,4 +90,27 @@ class OptionalTest extends TestCase
             );
         });
     }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itSquashesNestedOptionals()
+    {
+        $optional = new Optional(
+            new Optional(
+                new Optional(
+                    new Optional(
+                        "hello world"
+                    )
+                )
+            )
+        );
+
+        $this->assertEquals(
+            "hello world",
+            $optional->value()
+        );
+    }
 }
