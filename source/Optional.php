@@ -47,6 +47,10 @@ class Optional
         if (is_callable($callable)) {
             $result = $this->callWithParameters($callable, $parameters);
 
+            if ($result instanceof Optional) {
+                $result = $result->value();
+            }
+
             if ($this->isNotNone($result)) {
                 return new Optional($result);
             }
