@@ -22,4 +22,15 @@ class None
     {
         return null;
     }
+
+    /**
+     * @param callable $then
+     *
+     * @return None
+     */
+    public function none(callable $then)
+    {
+        $then();
+        return $this;
+    }
 }

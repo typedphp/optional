@@ -21,10 +21,16 @@ class Optional
     }
 
     /**
+     * @param mixed $then
+     *
      * @return mixed
      */
-    public function value()
+    public function value(callable $then = null)
     {
+        if (is_callable($then)) {
+            $then($this->value);
+        }
+
         return $this->value;
     }
 
@@ -38,7 +44,7 @@ class Optional
     {
         $callable = [$this->value, $method];
 
-        if ($this->isCallable($callable)) {
+        if (is_callable($callable)) {
             $result = $this->callWithParameters($callable, $parameters);
 
             if ($this->isNotNone($result)) {
@@ -47,16 +53,6 @@ class Optional
         }
 
         return new None();
-    }
-
-    /**
-     * @param array $callable
-     *
-     * @return bool
-     */
-    protected function isCallable($callable)
-    {
-        return is_callable($callable);
     }
 
     /**
@@ -78,5 +74,13 @@ class Optional
     protected function isNotNone($result)
     {
         return !empty($result);
+    }
+
+    /**
+     * @return $this
+     */
+    public function none()
+    {
+        return $this;
     }
 }

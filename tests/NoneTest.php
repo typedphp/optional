@@ -33,4 +33,42 @@ class NoneTest extends TestCase
             $none->value()
         );
     }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itHandlesNoneCallbacks()
+    {
+        $value = "not empty";
+        $none  = new None();
+
+        $none->none(function () use (&$value) {
+            $value = "empty";
+        });
+
+        $this->assertEquals(
+            "empty", $value
+        );
+    }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itIgnoresValueCallbacks()
+    {
+        $value = "empty";
+        $none  = new None();
+
+        $none->value(function () use (&$value) {
+            $value = "not empty";
+        });
+
+        $this->assertEquals(
+            "empty", $value
+        );
+    }
 }

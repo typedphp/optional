@@ -55,4 +55,39 @@ class OptionalTest extends TestCase
             Optional::class, $optional->bar()
         );
     }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itIgnoresNoneCallbacks()
+    {
+        $value    = "not empty";
+        $optional = new Optional("hello world");
+
+        $optional->none(function () use (&$value) {
+            $value = "empty";
+        });
+
+        $this->assertEquals(
+            "not empty", $value
+        );
+    }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itHandlesValueCallbacks()
+    {
+        $optional = new Optional("hello world");
+
+        $optional->value(function ($value) {
+            $this->assertEquals(
+                "hello world", $value
+            );
+        });
+    }
 }

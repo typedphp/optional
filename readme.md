@@ -46,6 +46,26 @@ $none = new None();
 $none->foo()->bar()->baz()->value(); // null
 ```
 
+```php
+<?php
+
+require("vendor/autoload.php");
+
+use TypedPHP\Optional\None;
+
+$none = new None();
+$none
+    ->none(function() { print "none"; }); // "none" printed
+    ->value(function($value) { print $value; }); // $value not printed
+
+use TypedPHP\Optional\Optional;
+
+$optional = new Optional("hello world");
+$optional
+    ->none(function() { print "none"; }); // "none" not printed
+    ->value(function($value) { print $value; }); // "hello world" printed
+```
+
 Once an `Optional` method call returns an empty value, it is transformed into a `None`.
 
 ## License
