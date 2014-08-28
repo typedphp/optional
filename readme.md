@@ -74,6 +74,15 @@ Once an `Optional` method call returns an empty value, it is transformed into a 
 ❯ composer require "typedphp/optional:0.*"
 ```
 
+## Testing
+
+```sh
+❯ git clone git@github.com:typedphp/php-optional.git
+❯ cd php-optional
+❯ composer install
+❯ phpunit
+```
+
 ## License
 
 [MIT](license.md)
