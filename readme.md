@@ -68,6 +68,12 @@ $optional
 
 Once an `Optional` method call returns an empty value, it is transformed into a `None`.
 
+## Installation
+
+```sh
+❯ composer require "typedphp/optional:0.*"
+```
+
 ## License
 
 [MIT](license.md)
