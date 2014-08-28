@@ -1,6 +1,6 @@
 # Optional
 
-This library is inspired by [the work of Johannes Schmitt](https://github.com/schmittjoh/php-option) and [the writings of Igor Wiedler](https://igor.io/2014/01/10/functional-library-null.html). It is intended to reduce the code required for null-checking.
+This library is inspired by [the code of Johannes Schmitt](https://github.com/schmittjoh/php-option) and [the writing of Igor Wiedler](https://igor.io/2014/01/10/functional-library-null.html). It is intended to reduce the code required for null-checking.
 
 [![Build Status](https://travis-ci.org/typedphp/php-optional.svg?branch=master)](https://travis-ci.org/typedphp/php-optional)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/typedphp/php-optional/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/typedphp/php-optional/?branch=master)
