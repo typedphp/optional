@@ -43,7 +43,7 @@ require("vendor/autoload.php");
 use TypedPHP\Optional\None;
 
 $none = new None();
-$none->foo()->bar()->baz()->value(); // null
+$none->hello()->world()->value(); // null
 ```
 
 ```php
