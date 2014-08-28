@@ -6,27 +6,31 @@ use TypedPHP\Optional\None;
 
 class NoneTest extends TestCase
 {
-  /**
-   * @test
-   */
-  public function itOnlyReturnsThisOnMethodCalls()
-  {
-    $none = new None();
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itOnlyReturnsThisOnMethodCalls()
+    {
+        $none = new None();
 
-    $this->assertSame(
-      $none, $none->foo()
-    );
-  }
+        $this->assertSame(
+            $none, $none->foo()
+        );
+    }
 
-  /**
-   * @test
-   */
-  public function itReturnsNullAsValue()
-  {
-    $none = new None();
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itReturnsNullAsValue()
+    {
+        $none = new None();
 
-    $this->assertNull(
-      $none->value()
-    );
-  }
+        $this->assertNull(
+            $none->value()
+        );
+    }
 }

@@ -17,18 +17,18 @@ use TypedPHP\Optional\Optional;
 
 class Foo
 {
-  public function hello()
-  {
-    return new Bar();
-  }
+    public function hello()
+    {
+        return new Bar();
+    }
 }
 
 class Bar
 {
-  public function world()
-  {
-    return "hello world";
-  }
+    public function world()
+    {
+        return "hello world";
+    }
 }
 
 $optional = new Optional(new Foo());
