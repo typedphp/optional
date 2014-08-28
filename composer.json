@@ -1,5 +1,6 @@
 {
-  "name": "typedphp/php-optional",
+  "name": "typedphp/optional",
+  "description": "A library to reduce the code required for null-checking.",
   "authors": [
     {
       "name": "Christopher Pitt",
