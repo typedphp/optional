@@ -1,0 +1,23 @@
+{
+  "name": "typedphp/php-optional",
+  "authors": [
+    {
+      "name": "Christopher Pitt",
+      "email": "cgpitt@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TypedPHP\\Optional\\": "source"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.*",
+    "mockery/mockery": "0.*"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TypedPHP\\Optional\\Tests\\": "tests"
+    }
+  }
+}
