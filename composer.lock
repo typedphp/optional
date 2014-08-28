@@ -4,8 +4,9 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ff33085b8319a55addb214f9d495db25",
-    "packages": [
+    "hash": "2a780e2b2e15eb55862b528ae94b4d0d",
+    "packages": [],
+    "packages-dev": [
         {
             "name": "mockery/mockery",
             "version": "0.9.1",
@@ -881,7 +882,6 @@
             "time": "2014-08-05 09:00:40"
         }
     ],
-    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],
