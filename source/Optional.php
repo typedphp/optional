@@ -77,7 +77,7 @@ class Optional
      */
     protected function isNotNone($result)
     {
-        return !empty($result);
+        return $result !== null;
     }
 
     /**
