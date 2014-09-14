@@ -31,11 +31,13 @@ class Optional
      */
     public function value(callable $then = null)
     {
-        if (is_callable($then)) {
-            $then($this->value);
-        }
+        if ($this->isNotNone($this->value)) {
+            if (is_callable($then)) {
+                $then($this->value);
+            }
 
-        return $this->value;
+            return $this->value;
+        }
     }
 
     /**
@@ -54,9 +56,9 @@ class Optional
             if ($this->isNotNone($result)) {
                 return new Optional($result);
             }
-        }
 
-        return new None();
+            return new None();
+        }
     }
 
     /**
@@ -87,6 +89,11 @@ class Optional
      */
     public function none(callable $then = null)
     {
+        if (!$this->isNotNone($this->value)) {
+            $then();
+            return;
+        }
+
         return $this;
     }
 }
