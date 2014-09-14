@@ -1,7 +1,7 @@
 {
     "name": "typedphp/optional",
     "description": "A library to reduce the code required for null-checking.",
-    "homepage": "https://github.com/typedphp/php-optional",
+    "homepage": "https://github.com/typedphp/optional",
     "license": "MIT",
     "authors": [
         {
