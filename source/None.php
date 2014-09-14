@@ -16,19 +16,21 @@ class None
     }
 
     /**
+     * @param mixed $then
+     *
      * @return null
      */
-    public function value()
+    public function value(callable $then = null)
     {
         return null;
     }
 
     /**
-     * @param callable $then
+     * @param mixed $then
      *
      * @return None
      */
-    public function none(callable $then)
+    public function none(callable $then = null)
     {
         $then();
         return $this;

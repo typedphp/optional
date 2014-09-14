@@ -81,9 +81,11 @@ class Optional
     }
 
     /**
+     * @param mixed $then
+     *
      * @return $this
      */
-    public function none()
+    public function none(callable $then = null)
     {
         return $this;
     }
