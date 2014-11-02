@@ -8,7 +8,7 @@ class None
      * @param string $method
      * @param array  $parameters
      *
-     * @return None
+     * @return $this
      */
     public function __call($method, $parameters)
     {
@@ -28,7 +28,7 @@ class None
     /**
      * @param mixed $then
      *
-     * @return None
+     * @return $this
      */
     public function none(callable $then = null)
     {

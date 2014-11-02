@@ -4,16 +4,13 @@ namespace TypedPHP\Optional;
 
 class Optional
 {
-
     /**
      * @var mixed
      */
     protected $value;
 
     /**
-     * @param $value
-     *
-     * @return Optional
+     * @param mixed $value
      */
     public function __construct($value)
     {
@@ -62,8 +59,8 @@ class Optional
     }
 
     /**
-     * @param array $callable
-     * @param array $parameters
+     * @param callable $callable
+     * @param array    $parameters
      *
      * @return mixed
      */
@@ -91,7 +88,6 @@ class Optional
     {
         if (!$this->isNotNone($this->value)) {
             $then();
-            return;
         }
 
         return $this;

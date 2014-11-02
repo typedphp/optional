@@ -123,13 +123,13 @@ class OptionalTest extends TestCase
     {
         $optional = new Optional(null);
 
-        $optional->value(function() {
+        $optional->value(function () {
             $this->fail("Value should not be called here.");
         });
 
         $flag = false;
 
-        $optional->none(function() use (&$flag) {
+        $optional->none(function () use (&$flag) {
             $flag = true;
         });
 
