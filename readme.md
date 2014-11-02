@@ -1,13 +1,13 @@
 # Optional
 
-This library is inspired by [the code of Johannes Schmitt](https://github.com/schmittjoh/php-option) and [the writing of Igor Wiedler](https://igor.io/2014/01/10/functional-library-null.html). It is intended to reduce the code required for null-checking. Part of [TypedPHP](https://leanpub.com/typedphp).
-
 ![Build Status](http://img.shields.io/travis/typedphp/optional.svg?style=flat-square)
 ![Version](http://img.shields.io/packagist/v/typedphp/optional.svg?style=flat-square)
 ![License](http://img.shields.io/packagist/l/typedphp/optional.svg?style=flat-square)
 ![Downloads](http://img.shields.io/packagist/dt/typedphp/optional.svg?style=flat-square)
 ![Code Quality](http://img.shields.io/scrutinizer/g/typedphp/optional.svg?style=flat-square)
 ![Code Coverage](http://img.shields.io/scrutinizer/coverage/g/typedphp/optional.svg?style=flat-square)
+
+This library is inspired by [the code of Johannes Schmitt](https://github.com/schmittjoh/php-option) and [the writing of Igor Wiedler](https://igor.io/2014/01/10/functional-library-null.html). It is intended to reduce the code required for null-checking. Part of [TypedPHP](https://leanpub.com/typedphp).
 
 ## Examples
 
