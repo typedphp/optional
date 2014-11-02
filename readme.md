@@ -84,7 +84,3 @@ Once an `Optional` method call returns an empty value, it is transformed into a 
 ❯ composer install
 ❯ phpunit
 ```
-
-## License
-
-[MIT](license.md)
