@@ -9,12 +9,16 @@
             "email": "cgpitt@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=5.4.0"
+    },
     "autoload": {
         "psr-4": {
             "TypedPHP\\Optional\\": "source"
         }
     },
     "require-dev": {
+        "php": ">=5.5.0",
         "phpunit/phpunit": "4.*",
         "mockery/mockery": "0.*"
     },

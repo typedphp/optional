@@ -2,6 +2,7 @@
 
 namespace TypedPHP\Optional\Tests;
 
+use BadMethodCallException;
 use Mockery;
 use TypedPHP\Optional\None;
 use TypedPHP\Optional\Optional;
@@ -134,5 +135,19 @@ class OptionalTest extends TestCase
         });
 
         $this->assertTrue($flag);
+    }
+
+    /**
+     * @test
+     *
+     * @return void
+     */
+    public function itThrowsIfMethodNotImplemented()
+    {
+        $optional = new Optional("hello world");
+
+        $this->setExpectedException(BadMethodCallException::class);
+
+        $optional->foo();
     }
 }

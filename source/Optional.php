@@ -2,6 +2,8 @@
 
 namespace TypedPHP\Optional;
 
+use BadMethodCallException;
+
 class Optional
 {
     /**
@@ -56,6 +58,8 @@ class Optional
 
             return new None();
         }
+
+        throw new BadMethodCallException("{$method} not implemented");
     }
 
     /**
