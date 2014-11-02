@@ -79,6 +79,6 @@ Once an `Optional` method call returns an empty value, it is transformed into a 
 ## Testing
 
 ```sh
-❯ composer create-project "typedphp/optional" .
+❯ composer create-project "typedphp/optional:*" .
 ❯ vendor/bin/phpunit
 ```
