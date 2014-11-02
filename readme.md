@@ -79,8 +79,6 @@ Once an `Optional` method call returns an empty value, it is transformed into a 
 ## Testing
 
 ```sh
-❯ git clone git@github.com:typedphp/php-optional.git
-❯ cd php-optional
-❯ composer install
-❯ phpunit
+❯ composer create-project "typedphp/optional" .
+❯ vendor/bin/phpunit
 ```
