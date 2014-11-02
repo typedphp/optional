@@ -73,7 +73,7 @@ Once an `Optional` method call returns an empty value, it is transformed into a 
 ## Installation
 
 ```sh
-❯ composer require "typedphp/optional:0.*"
+❯ composer require "typedphp/optional:*"
 ```
 
 ## Testing
